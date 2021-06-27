@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <title>ONG</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+{% load static %}        
+<link rel="stylesheet" href="{% static 'core/css/styles.css'%}">
+        <script src="{% static 'core/js/formularioContacto.js'%}"></script>
+        </head>
+    <body>
+        <div class="container-fluid text-center">
+
+         
+          <div class="row  ">
+            <div class="col-md-12 jumbotron">
+              <h1>ADOPTA UN PELUDO</h1>
+            </div>
+           
+            
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 navegacion">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+              <a class="flex-sm-fill text-sm-center nav-link " href="/">INICIO</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="/quienes-somos">QUIÉNES SOMOS</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="/mision-vision">MISIÓN/VISIÓN</a>
+              <a class="flex-sm-fill text-sm-center nav-link " href ="/como-adoptar">CÓMO ADOPTAR</a>
+              <a class="flex-sm-fill text-sm-center nav-link active" href ="/contactenos">CONTÁCTENOS</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href ="/proveedores">PROVEEDORES</a>
+            </nav>
+          </div>
+          </div>
+      
+          <div class="row">
+            <div class="titulo_pag">
+            <h2>CONTÁCTENOS</h2>
+           </div>
+          </div>
+          
+
+          <div class="row">
+              <div class="col-sm-4 div-formulario">
+                <div class="form-group">
+                  <label >NOMBRE :</label>
+                  <input type="text" name="txt_nombre" id="txt_nombre" class="form-control">
+                  <small  class="form-text text-muted">Nombre Completo Ej: Cristiano Ronaldo</small>
+                  <small style="visibility: hidden;" id="lbl_nombre" class="form-text text-danger">Debe Ingresar un Nombre</small>
+                </div>
+                
+                <div class="form-group">
+                  <label >Email :</label>
+                  <input  type="email" name="txt_email" id="txt_email" class="form-control">
+                  <small  class="form-text text-muted">Email con @ </small>
+                  <small style="visibility: hidden;" id="lbl_email" class="form-text text-danger">Debe Ingresar un Email o Validar que echeckedste Correcto</small>
+                </div>
+              </div>
+              <div class="col-sm-4 div-formulario">
+                <div class="form-group">
+                  <label class="radio-inline" ><input id="radiorut1" class="" type="radio" name="optradio" value="rut" checked>RUT</label>
+                  <label class="radio-inline"><input id="radiorut2" class="" type="radio" name="optradio" value="pasaporte" >PASAPORTE</label>
+                  <small class="form-text text-muted">Seleccione si usara RUT o Pasaporte</small>
+                  <small style="visibility: hidden;" id="lbl_rut_pasaporte" class="form-text text-danger">Debe Seleccionar una Alternativa</small>
+               
+                </div>
+                  <div class="form-group">
+                  <label >INDIQUE :</label>
+                  <input type="text" name="txt_identifica" id="txt_identifica" class="form-control">
+                  <small  class="form-text text-muted">RUT Ej:  00111222-3 / PASAPORTE Ej: 0300004</small>
+                  <small style="visibility: hidden;" id="lbl_identifica" class="form-text text-danger">Debe Identificarse O Ingresar los datosCOrrectos</small>
+                </div>
+              </div>
+              <div class="col-sm-4 div-formulario">
+                <div class="form-group">
+                <label >NÚMERO TELÉFONO :</label>
+                  <input type="number" name="txt_numero" id="txt_numero" class="form-control">
+                  <small  class="form-text text-muted">Ingrese +569 Antes de su Número Telefónico</small>
+                  
+                </div>
+                <div class="form-group">
+                  <label >CIUDAD RESIDENCIA :</label>
+                  <input type="text" name="txt_ciudad" id="txt_ciudad" class="form-control">
+                  <small  class="form-text text-muted">Nombre de la Ciudad Ej: Santiago</small>
+                  <small style="visibility: hidden;" id="lbl_ciudad" class="form-text text-danger">Debe Ingresar el Nombre de La Ciudad</small>
+               
+                </div>
+              </div>
+          </div>
+          <div class="row">
+
+            
+            <div class="col-sm-6 div-formulario">
+            <div class="form-group">
+            <label >COMENTARIO :</label>
+            <textarea type="text" class="form-control" name="txtaComentario" id="txtaComentario" cols="45" rows="5"></textarea>
+            <small  class="form-text text-muted ">Señale lo que le gustaria Participar en la ONG</small>
+            <small style="visibility: hidden;" id="lbl_comentario" class="form-text text-danger ">Debe ingresar un Comentario con almenos 50  caracteres.</small>
+          </div>
+        </div>
+        <div class="col-sm-6 div-formulario">
+          <div class="form-group">
+            <button id="btn_reset" type="button" class="btn form-text btn-info">Limpiar</button>
+            <button id="btn_enviar" type="button" class="btn form-text  btn-info">Enviar</button>
+          
+        </div>
+      </div>
+        </div>
+          </div>
+          <footer >
+            NICOLAS IGNACIO LALUZ BURGOS
+          </footer>
+   
+    </body>
+    <script src="{% static 'core/js/formularioContacto.js'%}">    </script>
+</html>
