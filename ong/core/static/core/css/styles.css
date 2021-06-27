@@ -80,6 +80,14 @@ footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: #3095a7;
 }
+.row .col-3{
+    max-width: 30rem;
+    margin-top: 2rem;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3095a7;
+}
+
 
 .formulario{
     margin: auto;
