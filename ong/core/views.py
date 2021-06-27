@@ -70,4 +70,4 @@ def modificarProveedor(request,id):
 def elimiProveedor(request,id):
     proveedor = Proveedor.objects.get(rut=id)
     proveedor.delete()
-    return redirect(to="inicio")
+    return redirect(to="/proveedores")

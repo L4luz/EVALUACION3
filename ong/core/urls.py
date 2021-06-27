@@ -2,7 +2,6 @@ from django import urls
 from django.urls import path,include
 from .views import inicio,quiSom,mi_vi,comAdo,contac,seccion_gatos,seccion_perros,vista_detalles_perro,tabla_usuarios,form_usuario,proveedores,crearProveedores,modificarProveedor,elimiProveedor
 
-
 urlpatterns = [
 
     path('', inicio, name="inicio"),

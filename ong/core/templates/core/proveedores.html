@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-
         <title>ONG</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -10,6 +9,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         {% load static %}
+        <script src="{% static 'core/js/editor.js'%}"></script>
         <link rel="stylesheet" href="{% static 'core/css/styles.css'%}">
       </head>
     <body>
@@ -38,7 +38,7 @@
       
          <div class="row">
            <div class="titulo_pag">
-           <h2>PROVEEDORES</h2>
+           <h2>Poveedores</h2>
           </div>
          </div>
 
@@ -96,12 +96,25 @@
             {% endfor %}
           </table>
         </div>
-        <a href="/crearProveedores" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Nuevo Proveedor</a>
-        <a href="/modificarProveedor" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Modificar Proveedores</a>
-        <a href="/elimiProveedor/123" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">eliminar</a>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-3">
+            <label for="">INDIQUE RUT</label>
+            <input type="text" class="form-control" id="dato">
+          </div>
+          <div class="col-6">
+            <a href="#" type="button"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="modificarProveedorr">Modificar Proveedor</a>
+            <a type="button" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="eliminarProveedor">Eliminar</a>
+          </div>
+          <div class="col-3">
+            <a href="/crearProveedores"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="crearProveedor">Nuevo Proveedor</a>
+          </div>
+        </div>
       </div>
           <footer >
             NICOLAS IGNACIO LALUZ BURGOS
           </footer>
     </body>
+    <script src="{% static 'core/js/editor.js'%}"></script>
 </html>
