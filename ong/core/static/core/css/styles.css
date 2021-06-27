@@ -1,0 +1,119 @@
+
+
+.jumbotron{
+background-color: #3095a7;
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+footer{
+    background-color: #3095a7;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+}
+.nav :active{
+    background-color: #3095a7;
+}
+
+.nav-pills .nav-link.active,
+.show>.nav-pills .nav-link{
+    background:#3095a7!important
+    
+}
+.nav-pills a {
+    color: #3095a7;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#demo .carousel{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:10px;
+    margin-bottom: 100px;
+    background-color: #3095a7;
+    border: solid #3095a7;
+}
+#demo img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: solid #3095a7;
+}
+#demo{
+    color: #3095a7;
+    max-width: 60%;
+    margin: auto;
+}
+
+    
+.card  .btn{
+    background-color: #3095a7;
+    border: #3095a7;
+}
+.container-fluid .card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: solid #3095a7;
+    
+}
+.row .titulo_pag {
+    margin-top: 4rem;
+    color: #3095a7;
+    text-align: center;
+    margin-left: 5rem;
+}
+
+.row .post_titulo{
+    border: solid #3095a7;
+   max-width: 60rem;
+   margin-top: 5rem;
+   margin-left: auto;
+   margin-right: auto;
+}
+.row .col-6{
+    max-width: 30rem;
+    margin-top: 2rem;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #3095a7;
+}
+
+.formulario{
+    margin: auto;
+    border: solid #3095a7;
+}
+
+
+.div-formulario{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.div-formulario select{
+    text-align: center;
+    background-color: #3095a7;
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.div-formulario option{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    
+}
+.tiempo ,.perros_gatos{
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+.perros_gatos a{
+    text-decoration: none;
+    color: #3095a7;
+}
+
