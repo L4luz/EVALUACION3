@@ -27,7 +27,7 @@ class Servicio(models.Model):
 
 class Proveedor(models.Model):
     
-    rut = models.CharField(primary_key=True,max_length=50,verbose_name='rut',default='')
+    rut= models.CharField(primary_key=True,max_length=50,verbose_name='rut',default='')
     nombreProveedor = models.CharField(max_length=50,verbose_name='nombreProveedor',default='')
     razonSocial = models.CharField(max_length=50,verbose_name='razonSocial',default='')
     descripcion = models.CharField(max_length=500,verbose_name='descripcion',default='')
